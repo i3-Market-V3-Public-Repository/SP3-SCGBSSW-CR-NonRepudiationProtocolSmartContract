@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/NonRepudiation.sol": {
+      "content": "//SPDX-License-Identifier: Unlicense\npragma solidity ^0.8.0;\n\ncontract NonRepudiation {\n    struct Proof {\n        uint256 timestamp;\n        uint256 secret;\n    }\n    mapping(address => mapping (uint256 => Proof)) public registry;\n    event Registration(address sender, uint256 dataExchangeId, uint256 timestamp, uint256 secret);\n\n    function setRegistry(uint256 _dataExchangeId, uint256 _secret) public {\n        require(registry[msg.sender][_dataExchangeId].secret == 0);\n        registry[msg.sender][_dataExchangeId] = Proof(block.timestamp, _secret);\n        emit Registration(msg.sender, _dataExchangeId, block.timestamp, _secret);\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
