@@ -1,23 +1,50 @@
 {
-  "name": "non-repudiation",
+  "name": "@i3m/non-repudiation-protocol-smart-contract",
   "version": "1.0.0",
-  "description": "Non repudiation registration smart contract",
-  "main": "index.js",
+  "description": "Non-repudiation-protocol smart-contract",
+  "author": "UPC",
+  "license": "EUPL-1.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/i3-market/code/wp3/t3.2/conflict-resolution/non-repudiation-hardhat.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/i3-market/code/wp3/t3.2/conflict-resolution/non-repudiation-hardhat/issues"
+  },
+  "keywords": [
+    "smart contract",
+    "BESU",
+    "Ethereum",
+    "Solidity",
+    "non-repudiation",
+    "non-repudiation library",
+    "conflict resolution",
+    "conflict resolver service",
+    "crs",
+    "proof of origin",
+    "poo",
+    "proof of reception",
+    "por",
+    "proof of publication",
+    "pop",
+    "jws",
+    "i3m",
+    "i3-MARKET"
+  ],
+  "main": "deployments/i3MarketNetwork/NonRepudiation.json",
+  "files": [
+    "deployments/i3MarketNetwork/NonRepudiation.json"
+  ],
   "scripts": {
     "deploy": "hardhat --network i3MarketNetwork deploy"
-  },
-  "keywords": [],
-  "author": "UPC",
-  "license": "ISC",
-  "dependencies": {
-    "hardhat": "^2.7.0",
-    "hardhat-deploy": "^0.9.14"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
-    "ethers": "^5.5.1"
+    "ethers": "^5.5.1",
+    "hardhat": "^2.7.0",
+    "hardhat-deploy": "^0.9.14"
   }
 }
