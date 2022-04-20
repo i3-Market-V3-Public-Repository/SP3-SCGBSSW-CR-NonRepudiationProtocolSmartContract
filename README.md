@@ -2,6 +2,13 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
+Set `.env` file with your `account` and `rpcUrlEndpoint`. For example:
+
+```env
+account=0x4bee03c8fe18e4ba5329934c7d1c43183077946544f3eb57b3b6736210c98676
+rpcUrlEndpoint=http://89.231.25.222:8545
+```
+
 Try running some of the following tasks:
 
 ```shell
