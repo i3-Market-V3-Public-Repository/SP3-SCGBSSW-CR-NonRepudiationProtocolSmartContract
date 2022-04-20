@@ -1,5 +1,5 @@
 {
-  "name": "@i3m/non-repudiation-protocol-smart-contract",
+  "name": "@i3-market-v2-public-repository/sp3-scgbssw-cr-nonrepudiationprotocolsmartcontract",
   "version": "1.0.1",
   "description": "Non-repudiation-protocol smart-contract",
   "author": "UPC",
@@ -37,6 +37,9 @@
   ],
   "scripts": {
     "deploy": "hardhat --network i3MarketNetwork deploy"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
