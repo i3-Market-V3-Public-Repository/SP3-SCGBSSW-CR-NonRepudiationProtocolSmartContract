@@ -6,10 +6,10 @@
   "license": "EUPL-1.2",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/i3-market/code/wp3/t3.2/conflict-resolution/non-repudiation-hardhat.git"
+    "url": "git+https://github.com/i3-Market-V2-Public-Repository/SP3-SCGBSSW-CR-NonRepudiationProtocolSmartContract.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/i3-market/code/wp3/t3.2/conflict-resolution/non-repudiation-hardhat/issues"
+    "url": "https://github.com/i3-Market-V2-Public-Repository/SP3-SCGBSSW-CR-NonRepudiationProtocolSmartContract/issues"
   },
   "keywords": [
     "smart contract",
